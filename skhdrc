@@ -1,5 +1,3 @@
-# Makes full fullscreen
-ctrl + alt - z : yabai -m window --toggle zoom-fullscreen
 
 # Change window focus
 shift + alt - h : yabai -m window --focus west
@@ -18,6 +16,9 @@ ctrl + shift - h : yabai -m window west --resize right:-20:0 2> /dev/null || yab
 ctrl + shift - j : yabai -m window north --resize bottom:0:20 2> /dev/null || yabai -m window --resize bottom:0:20
 ctrl + shift - k : yabai -m window south --resize top:0:-20 2> /dev/null || yabai -m window --resize top:0:-20
 ctrl + shift - l : yabai -m window east --resize left:20:0 2> /dev/null || yabai -m window --resize left:20:0
+
+# Makes full fullscreen
+ctrl + alt - m : yabai -m window --toggle zoom-fullscreen
 
 # Toggle window floating
 ctrl + alt - f : yabai -m window --toggle float --grid 12:12:1:1:10:10
