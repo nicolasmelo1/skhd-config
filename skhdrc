@@ -1,0 +1,42 @@
+# Makes full fullscreen
+ctrl + alt - z : yabai -m window --toggle zoom-fullscreen
+
+# Change window focus
+shift + alt - h : yabai -m window --focus west
+shift + alt - j : yabai -m window --focus north
+shift + alt - k : yabai -m window --focus south
+shift + alt - l : yabai -m window --focus east
+
+## Between displays
+shift + alt - a : yabai -m display --focus west
+shift + alt - w : yabai -m display --focus north
+shift + alt - s : yabai -m display --focus south
+shift + alt - d : yabai -m display --focus east
+
+# Resizes windows
+ctrl + shift - h : yabai -m window west --resize right:-20:0 2> /dev/null || yabai -m window --resize right:-20:0
+ctrl + shift - j : yabai -m window north --resize bottom:0:20 2> /dev/null || yabai -m window --resize bottom:0:20
+ctrl + shift - k : yabai -m window south --resize top:0:-20 2> /dev/null || yabai -m window --resize top:0:-20
+ctrl + shift - l : yabai -m window east --resize left:20:0 2> /dev/null || yabai -m window --resize left:20:0
+
+# Toggle window floating
+ctrl + alt - f : yabai -m window --toggle float --grid 12:12:1:1:10:10
+ctrl + alt - left: yabai -m window --toggle float --grid 2:2:0:0:1:2
+ctrl + alt - right: yabai -m window --toggle float --grid 2:2:1:0:1:2
+
+# Balance windows
+ctrl + alt - b : yabai -m space --balance
+
+# Swap window to space
+ctrl + alt - h : yabai -m window --swap west
+ctrl + alt - j : yabai -m window --swap north
+ctrl + alt - k : yabai -m window --swap south
+ctrl + alt - l : yabai -m window --swap east
+
+# between displays
+ctrl + alt - a : yabai -m window --display west; yabai -m display --focus west
+ctrl + alt - w : yabai -m window --display north; yabai -m display --focus north
+ctrl + alt - s : yabai -m window --display south; yabai -m display --focus south
+ctrl + alt - d : yabai -m window --display east; yabai -m display --focus east
+
+ctrl + alt - r : yabai -m space --rotate 270
